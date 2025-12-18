@@ -1,3 +1,7 @@
+---
+applyTo: "src/skills/**/*.py"
+---
+
 # Skills Component Instructions
 
 ## Guiding Principles

@@ -1,3 +1,7 @@
+---
+applyTo: "src/architecture/**/*.py"
+---
+
 # Architecture Instructions
 
 This document outlines the high-level architectural principles for the Agentic System. The architecture is designed to be modular, state-driven, and easily extensible. It enforces a strict separation of concerns between orchestration, state management, and execution.

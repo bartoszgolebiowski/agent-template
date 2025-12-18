@@ -1,3 +1,7 @@
+---
+applyTo: "src/tools/**/*.py"
+---
+
 # Tools Component Instructions
 
 ## Guiding Principles

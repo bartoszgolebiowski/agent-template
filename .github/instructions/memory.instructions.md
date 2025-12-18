@@ -1,3 +1,7 @@
+---
+applyTo: "src/memory/**/*.py"
+---
+
 # Memory Component Instructions
 
 ## Guiding Principles

@@ -1,3 +1,7 @@
+---
+applyTo: "src/prompting/**/*.py"
+---
+
 # Templates Component Instructions
 
 ## Guiding Principles

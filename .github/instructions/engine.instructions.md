@@ -1,3 +1,7 @@
+---
+applyTo: "src/engine/**/*.py"
+---
+
 # Engine Component Instructions
 
 ## Guiding Principles

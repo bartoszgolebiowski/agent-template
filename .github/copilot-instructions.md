@@ -1,10 +1,10 @@
-# AI Developer Instructions - Agent Research Repo
+# AI Developer Instructions
 
-This project implements a **deterministic, state-driven agent architecture**. You must strictly adhere to the following engineering guidelines.
+This project implements a **deterministic, state-driven agent architecture**. You must strictly adhere to the following engineering guidelines. The main dependency is LangGraph, which provides the orchestration framework.
 
 ## 1. Core Architecture Rules
 
-- **State-Driven Flow**: The `Coordinator` (state machine) decides the next action based on `ResearchState`. **Never** ask the LLM to decide the control flow.
+- **State-Driven Flow**: The `Coordinator` (state machine) decides the next action based on `AgentState`. **Never** ask the LLM to decide the control flow.
 - **Separation of Concerns**:
   - **Engine**: Logic & Orchestration (`Coordinator`, `Executor`).
   - **Memory**: Data Structure & State Updates (`models.py`, `state_manager.py`).
@@ -46,11 +46,11 @@ This project implements a **deterministic, state-driven agent architecture**. Yo
 
 ## 4. File Structure Reference
 
-- `agent_research/engine/coordinator.py`: **State Machine Logic** (Edit here to change flow).
-- `agent_research/memory/models.py`: **Data Schemas** (Edit here to change state structure).
-- `agent_research/skills/definitions.py`: **Skill Registry** (Edit here to add capabilities).
-- `agent_research/prompting/jinja/`: **Prompt Templates** (Edit here to change LLM instructions).
-- `agent_research/llm/`: **LLM Interface** (Client wrapper and configuration).
+- `src/engine/coordinator.py`: **State Machine Logic** (Edit here to change flow).
+- `src/memory/models.py`: **Data Schemas** (Edit here to change state structure).
+- `src/skills/definitions.py`: **Skill Registry** (Edit here to add capabilities).
+- `src/prompting/jinja/`: **Prompt Templates** (Edit here to change LLM instructions).
+- `src/llm/`: **LLM Interface** (Client wrapper and configuration).
 
 ## 5. Example: Adding a Field to State
 

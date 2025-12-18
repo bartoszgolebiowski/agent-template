@@ -1,3 +1,7 @@
+---
+applyTo: "src/llm/**/*.py"
+---
+
 # LLM Component Instructions
 
 ## Guiding Principles
